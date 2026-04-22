@@ -1,0 +1,46 @@
+@use "../../styles/variables" as *;
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: $space-1;
+
+  .labelRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: $font-size-xs;
+  }
+  .label {
+    font-size: $font-size-sm;
+    color: var(--color-text-muted);
+  }
+  .pct {
+    color: var(--color-text);
+    font-variant-numeric: tabular-nums;
+  }
+  .track {
+    height: 0.5rem;
+    border-radius: 999px;
+    background-color: var(--gray-100);
+    overflow: hidden;
+  }
+  .fill {
+    height: 100%;
+    border-radius: inherit;
+    transition: width 0.35s ease;
+
+    &.accent_primary {
+      background-color: var(--color-primary);
+    }
+    &.accent_success {
+      background-color: var(--color-success);
+    }
+    &.accent_info {
+      background-color: var(--color-info);
+    }
+    &.accent_warning {
+      background-color: var(--color-warning);
+    }
+  }
+}

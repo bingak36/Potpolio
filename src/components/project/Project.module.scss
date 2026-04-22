@@ -1,0 +1,24 @@
+@use '../../styles/variables' as *;
+
+.project_section {
+    background-color: var(--color-bg-muted);
+    transition: $transition-theme;
+
+    .inner {
+        padding: $space-12 0;
+
+        .grid {
+            display: grid;
+            gap: $space-3;
+            grid-template-columns: 1fr;
+            @media (min-width:768px){
+                grid-template-columns: repeat(2,1fr);
+                
+            }
+            @media (min-width:1024px){
+                grid-template-columns: repeat(3,1fr);
+                
+            }
+        }
+    }
+}

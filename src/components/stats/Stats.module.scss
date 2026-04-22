@@ -1,0 +1,22 @@
+@use '../../styles/variables' as *;
+.stats{
+    display: flex;
+    gap:$space-2;
+    // padding-left: $space-3;
+    .item {
+        display: flex;
+        flex-direction: column;
+        gap:$space-2;
+    }
+    .value {
+        font-size: $font-size-sm;
+        color:var(--color-text);
+        font-weight: 900;
+    }
+    .label {
+        font-size: $font-size-sm;
+        color:var(--color-text-muted);
+        display: block;
+        width:12rem ;
+    }
+}

@@ -1,0 +1,63 @@
+@use './variables' as *;
+
+.btn {
+
+    border-radius: $radius-md;
+    padding: .8rem 1.5rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: 600;
+
+    &__outline {
+        border: 1px solid var(--color-primary);
+        background-color: transparent;
+        color: var(--color-text);
+    }
+
+    &__primary {
+        border: none;
+        background-color: var(--btn-primary-bg);
+        color: var(--btn-primary-text)
+    }
+
+    &__small {
+        font-size: 1.2rem;
+    }
+    &__md {
+        font-size: 1.3rem;
+        border-radius: $radius-sm;
+    }
+    &__ghost{
+        border: 1px solid var(--color-border);
+        background-color: var(--color-card-bg);
+        color:var(--color-text)
+    }
+}
+
+.badge {
+    padding: .3rem .7rem;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-self: flex-start;
+    border-radius: $radius-full;
+
+    &__green {
+        background-color: rgba(16, 185, 128, .15);
+        color: var(--color-success)
+    }
+
+    &__primary {
+        background: rgba(124, 58, 237, 0.12);
+        color: var(--color-primary);
+    }
+
+    &__blue {
+        background: rgba(59, 130, 246, 0.15);
+        color: var(--color-info);
+    }
+
+    &__orage {
+        background: rgba(245, 158, 11, 0.18);
+        color: var(--color-warning);
+    }
+}

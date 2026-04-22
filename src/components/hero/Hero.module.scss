@@ -1,0 +1,39 @@
+@use '../../styles/variables' as *;
+.hero {
+    background-color: var(--color-bg-muted);
+    .inner {
+        padding: $space-12 0;
+        display: grid;
+        gap: $space-2;
+        align-items: center;
+
+        @media (min-width:900px){
+            grid-template-columns: 1fr 1fr;
+            
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            gap: $space-2;
+        }
+        .visual {
+            display: flex;
+            justify-content: center;
+
+            .imageFrame {
+                width: min(100%,380px);
+                aspect-ratio: 1;
+                background: linear-gradient(
+                    145deg,
+                    var(--color-card-bg),
+                    var(--color-bg-muted)
+                );
+                border: 1px solid var(--color-border);
+                border-radius: $radius-xl;
+                box-shadow: var(--shadow-md);
+
+            }
+        }
+
+    }
+}

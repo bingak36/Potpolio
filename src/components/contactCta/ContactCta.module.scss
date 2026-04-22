@@ -1,0 +1,21 @@
+@use '../../styles/variables' as *;
+
+.cta_section {
+    padding:$space-12 0;
+    height: 50vh;
+    .inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        transition:  $transition-theme;
+        background-color: var(--color-bg);
+        gap: $space-3;
+        .cta {
+            display: flex;
+            justify-content: center;
+            gap: $space-2;
+
+        }
+    }
+}
