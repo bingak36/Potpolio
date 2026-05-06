@@ -19,7 +19,7 @@ function getInitialTheme(){
 
 
 const ThemeProvider = ({children}) => {
- 
+
   const [theme, setTheme]=useState(getInitialTheme)
 
   useEffect(()=>{
@@ -28,7 +28,7 @@ const ThemeProvider = ({children}) => {
     localStorage.setItem(STORAGE_KEY,theme)
 
   },[theme])
- 
+
   const toggleTheme =useCallback(()=>{
     setTheme((t)=>(t==='light'? 'dark':'light'))
   },[])

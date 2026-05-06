@@ -1,0 +1,95 @@
+/** Content for the dedicated /skills page (stack + certifications). */
+
+export const skillCategories = [
+    {
+        key: 'frontend',
+        iconKey: 'monitor',
+        iconColor: 'var(--color-info)',
+        accent: 'frontend',
+        title: 'Frontend development',
+        subtitle: 'Shipping interfaces that feel fast, clear, and accessible.',
+        skills: [
+            { name: 'React / Next.js', percent: 95 },
+            { name: 'TypeScript', percent: 90 },
+            { name: 'Tailwind CSS', percent: 88 },
+            { name: 'Redux / Zustand', percent: 85 },
+            { name: 'Three.js / WebGL', percent: 70 },
+        ],
+        tags: ['React', 'Next.js', 'Vue.js', 'Svelte', 'Webpack'],
+    },
+    {
+        key: 'backend',
+        iconKey: 'server',
+        iconColor: 'var(--color-success)',
+        accent: 'backend',
+        title: 'Backend development',
+        subtitle: 'APIs, data modeling, and services that scale with the product.',
+        skills: [
+            { name: 'Node.js / Express', percent: 95 },
+            { name: 'REST & GraphQL', percent: 92 },
+            { name: 'PostgreSQL / Redis', percent: 90 },
+            { name: 'Prisma / TypeORM', percent: 85 },
+            { name: 'Python / FastAPI', percent: 80 },
+        ],
+        tags: ['Node.js', 'PostgreSQL', 'Redis', 'Prisma', 'REST'],
+    },
+    {
+        key: 'testing',
+        iconKey: 'flask',
+        iconColor: 'var(--color-primary)',
+        accent: 'testing',
+        title: 'Testing & quality',
+        subtitle: 'Automated checks that protect refactors and speed up delivery.',
+        skills: [
+            { name: 'Jest / Vitest', percent: 90, showPercent: false },
+            { name: 'Cypress / Playwright', percent: 85, showPercent: false },
+            { name: 'Storybook', percent: 78, showPercent: false },
+        ],
+        tags: ['Jest', 'Playwright', 'Storybook', 'CI checks'],
+    },
+    {
+        key: 'devops',
+        iconKey: 'cloud',
+        iconColor: 'var(--color-warning)',
+        accent: 'devops',
+        title: 'DevOps & cloud',
+        subtitle: 'Reliable deploys, observability, and environments teams can trust.',
+        skills: [
+            { name: 'Docker / Kubernetes', percent: 88, showPercent: false },
+            { name: 'AWS / GCP / Vercel', percent: 82, showPercent: false },
+            { name: 'CI/CD — GitHub Actions', percent: 90, showPercent: false },
+            { name: 'Nginx / Linux', percent: 75, showPercent: false },
+        ],
+        tags: ['Docker', 'GitHub Actions', 'AWS', 'Terraform'],
+    },
+]
+
+export const certifications = [
+    {
+        key: 'aws',
+        monogram: 'AWS',
+        brandColor: 'var(--color-info)',
+        title: 'AWS Solutions Architect',
+        issuer: 'Amazon Web Services',
+        year: '2023',
+        detail: 'Professional-level certification.',
+    },
+    {
+        key: 'gcp',
+        monogram: 'GCP',
+        brandColor: 'var(--color-success)',
+        title: 'Google Cloud Professional',
+        issuer: 'Google',
+        year: '2022',
+        detail: 'Cloud DevOps Engineer track.',
+    },
+    {
+        key: 'meta',
+        monogram: 'MR',
+        brandColor: 'var(--color-primary)',
+        title: 'Meta advanced React',
+        issuer: 'Meta',
+        year: '2021',
+        detail: 'Advanced React patterns & performance.',
+    },
+]

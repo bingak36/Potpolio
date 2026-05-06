@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh api *)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "PowerShell(gh api *)",
+      "Bash(curl -s \"https://api.github.com/repos/ky-frontend-2026/ky-portfolio-2026/contents/src/utils/icons.jsx?ref=5-skills\")",
+      "Bash(python3 -c \"import sys,json,base64; d=json.load\\(sys.stdin\\); print\\(base64.b64decode\\(d['content']\\).decode\\('utf-8'\\)\\)\")",
+      "WebFetch(domain:ntk01.com)",
+      "Skill(update-config)",
+      "PowerShell($base=\"https://raw.githubusercontent.com/ky-frontend-2026/ky-portfolio-2026/5-skills\"; \\(Invoke-WebRequest -UseBasicParsing \"$base/src/components/progressBar/ProgressBar.jsx\"\\).Content)",
+      "PowerShell($base=\"https://raw.githubusercontent.com/ky-frontend-2026/ky-portfolio-2026/5-skills\"; \\(Invoke-WebRequest -UseBasicParsing \"$base/src/components/progressBar/ProgressBar.module.scss\"\\).Content)"
+    ]
+  }
+}

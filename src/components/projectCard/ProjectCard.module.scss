@@ -1,0 +1,41 @@
+@use '../../styles/variables' as *;
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-card-bg);
+    box-shadow: var(--shadow-sm);
+    transition: $transition-theme;
+    border-radius: $radius-md;
+    .thumb{
+        aspect-ratio: 16 / 10;
+        background: linear-gradient(
+            135deg,
+            var(--color-bg-muted),
+            var(--color-border)
+        );
+    }
+    .body {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap:$space-1;
+        padding:$space-3;
+        .tags {
+            display: flex;
+            gap: $space-1;
+            flex-wrap: wrap;
+        }
+        .desc {
+            font-size: $font-size-sm;
+            color:var(--color-text-muted);
+            min-height: 5rem;
+        }
+        .cta {
+            gap: $space-1;
+            display: flex;
+            margin-top: $space-1;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@use '../../styles/variables' as *;
+.card {
+    padding: $space-3;
+    border-radius: $radius-sm;
+    background-color: var(--color-card-bg);
+    border:1px solid var(--color-border);
+    box-shadow: var(--shadow-bg);
+    transition: $transition-theme;
+}
+.title{
+    margin-bottom: $space-1;
+    font-size: $font-size-md;
+    color:var(--color-text)
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: $space-3;
+}
